@@ -1,0 +1,23 @@
+.error {
+
+    &__content {
+
+        h2.title {
+
+            @media (max-width: 991px) {
+                font-size: 40px;
+                line-height: 52px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 30px;
+                line-height: 42px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+    }
+}

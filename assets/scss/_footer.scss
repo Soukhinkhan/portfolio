@@ -1,0 +1,140 @@
+.footer {
+    background: #F9F4F1;
+
+    &.footer-3 {
+        background: $white;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-image: url(assets/img/footer/footer-background.svg);
+
+        .footer {
+
+            &__widget-menu li a {
+
+                &:hover, &:focus {
+                    color: $primaryhover
+                }
+            }
+
+            &__social-media li a:hover {
+                background-color: $primaryhover;
+            }
+        }
+    }
+    
+    &.content-color-secondary {
+        
+        .description {
+            
+            p {
+                color: $primary4;
+            }
+        }
+        
+        .footer__widget-menu li a {
+            color: $primary4;
+            
+            &:hover, &:focus {
+                color: $primary1;
+            }
+        }
+    }
+
+    .description {
+
+        p {
+            color: #4B7773;
+            font-size:15px;
+            line-height:24px;
+        }
+    }
+
+    &__logo {
+        color: #141313;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        font-family: $ibm;
+        line-height: normal;
+
+        &:hover {
+            color: $primary1;
+        }
+    }
+
+    &__social-media {
+        gap: 5px;
+
+        li {
+
+            a {
+                width: 36px;
+                height: 36px;
+                display: flex;
+                font-size:18px;
+                color: $secondary1;
+                border-radius: 8px;
+                align-items: center;
+                justify-content: center;
+                @include transition(all .3s ease);
+
+                &:hover {
+                    color: $white;
+                    background-color: $primary1;
+                }
+            }
+        }
+    }
+
+    &__widget {
+        gap: 30px;
+
+        &-menu {
+
+            li {
+                margin-bottom: 15px;
+
+                &.title {
+                    margin-bottom:20px;
+
+                    a {
+                        font-size:20px;
+                        line-height:20px;
+                        font-weight: 700;
+                        font-family: $vollkorn;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom:0;
+                }
+
+
+                a {
+                    font-size:15px;
+                    color: #4B7773;
+                    font-weight:500;
+                    line-height:24px;
+                    font-family: $jost;
+
+                    &:hover, &:focus {
+                        color: $primary1;
+                    }
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 30px 0;
+        border-top: 1px solid rgb(0 65 61 / 10%);
+
+        p {
+            font-size:12px;
+            font-weight: 400;
+            color: #4B7773;
+            line-height:17px;
+            font-family:$jost;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.about {
+
+    &__content {
+        max-width: 820px;
+
+        .title {
+            font-size:50px;
+            line-height: 60px;
+
+            @media (max-width: 991px){
+                font-size:40px;
+                line-height:50px;
+            }
+
+            @media (max-width: 575px){
+                font-size:30px;
+                line-height:40px;
+            }
+        }
+    }
+
+    &__description {
+        margin-top: 2.6%;
+        max-width: 440px;
+
+        @media (max-width: 1299px) {
+            margin-top: 1.9%;
+        }
+
+        @media (max-width: 767px) {
+            margin-top:0;
+        }
+
+        &-wrapper {
+            gap: 30px 100px;
+
+            @media (max-width: 991px) {
+                gap: 30px;
+            }
+        }
+
+        p {
+            font-size:18px;
+            color: $primary3;
+            line-height: 26px;
+            font-family: $jost;
+
+             & + p {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.award {
+    background: #F9F4F1;
+
+    &__content {
+        gap: 30px 126px;
+
+        @media (max-width: 1199px) {
+            gap:30px 80px;
+        }
+
+        &-text {
+
+            .title {
+                font-size:50px;
+                line-height: 60px;
+
+                @media (max-width: 991px){
+                    font-size:40px;
+                    line-height:50px;
+                }
+
+                @media (max-width: 575px){
+                    font-size:30px;
+                    line-height:40px;
+                }
+            }
+
+        }
+
+        &-description {
+            max-width:440px;
+            margin-bottom: -30px;
+
+            @media (max-width: 1199px) {
+                max-width:100%;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size:18px;
+                line-height:24px;
+            }
+        }
+    }
+
+    &__item {
+
+        &-wrapper {
+            margin-left: -203px;
+            margin-right: -203px;
+
+            @media (max-width: 1750px) {
+                margin-left:0;
+                margin-right:0;
+            }
+        }
+    }
+}

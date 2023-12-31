@@ -1,0 +1,79 @@
+<svg width="725" height="749" viewBox="0 0 725 749" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        @keyframes pulse {
+        0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+        70% {
+        -webkit-transform: scale(0.99);
+        transform: scale(0.99);
+        }
+        100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+        }
+
+        @keyframes top-bottom {
+        0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        }
+        70% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+        }
+        100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        }
+        }
+
+        @keyframes left {
+        0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        }
+        70% {
+        -webkit-transform: translate(-70px, 40.5px);
+        transform: translate(-70px, 40.5px);
+        }
+        100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        }
+        }
+
+        #start-2 { animation: pulse 4s ease-in-out infinite; }
+        #middle-bar { animation: left 3.5s ease-in-out infinite; }
+
+        #start-1 { animation: pulse 1s ease-in-out infinite; }
+        #steven-wrapper { animation: top-bottom 3s ease-in-out infinite; }
+    </style>
+    <rect width="725" height="749" fill="#F5F5F5"/>
+    <g id="shape">
+        <g id="start-2">
+
+            <path id="Shape_02" d="M123.173 448.136C104.88 464.112 82.6412 452.092 77.2518 475.773C55.5942 574.067 -159.188 840.176 271.662 651.493C272.755 650.977 273.836 650.471 274.897 649.942C372.753 652.096 336.383 594.296 336.139 548.839C336.148 547.84 335.882 546.857 335.371 545.998C334.861 545.139 334.124 544.437 333.242 543.967C332.528 542.785 329.606 541.554 329.606 541.554L231.81 527.318L241.602 429.008C241.602 429.008 240.524 424.308 238.331 423.543C197.679 409.433 153.719 421.084 123.173 448.136Z" fill="#73774C"/>
+        </g>
+        <g id="start-1">
+
+            <path id="Shape_01" d="M674.554 3.69385C652.299 8.64917 553.806 40.8895 532.369 48.3455C527.213 50.1294 526.564 52.2449 524.785 56.817C522.824 61.9028 473.449 191.475 463.355 212.554C461.386 216.691 464.967 221.174 469.945 219.622C510.194 207.061 593.585 178.82 621.75 169.25C625.127 168.102 628.064 167.058 630.623 165.24C633.182 163.422 665.645 153.24 634.374 157.162C551.933 167.499 669.197 55.8364 681.705 9.48625C682.812 5.29639 678.655 2.78488 674.554 3.69385Z" fill="#E37961"/>
+        </g>
+    </g>
+    <g id="Image">
+        <rect id="image_bg" x="48" y="48" width="565" height="630" fill="#D9AC5D"/>
+        <rect id="image_here" x="83" y="64" width="494" height="614" fill="url(#pattern0)"/>
+        <g id="steven-wrapper">
+
+            <text id="Steven" transform="matrix(0 -1 1 0 1.5 398.5)" stroke="#00413D" xml:space="preserve" style="white-space: pre" font-family="Vollkorn" font-size="100" letter-spacing="0.04em"><tspan x="0.03125" y="80.55">STEVEN</tspan></text>
+        </g>
+    </g>
+    <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_0_1" transform="matrix(0.00129321 0 0 0.00104371 -0.0114664 -0.00902761)"/>
+        </pattern>
+        <image id="image0_0_1" data-name="happy-good-looking-man-glasses-pointing-finger-left.png" width="791" height="1076" xlink:href="./banner-man.png"/>
+    </defs>
+</svg>

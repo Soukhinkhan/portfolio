@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'portfolio';
+    src: url('./assets/fonts/portfolio.eot?92343187');
+    src: url('./assets/fonts/portfolio.eot?92343187#iefix') format('embedded-opentype'),
+         url('./assets/fonts/portfolio.woff2?92343187') format('woff2'),
+         url('./assets/fonts/portfolio.woff?92343187') format('woff'),
+         url('./assets/fonts/portfolio.ttf?92343187') format('truetype'),
+         url('./assets/fonts/portfolio.svg?92343187#portfolio') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "portfolio";
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+   
+.icon-comment:before { content: '\e800'; } /* '' */
+.icon-downaload:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\e803'; } /* '' */
+.icon-instagram-solid:before { content: '\e804'; } /* '' */
+.icon-linkedin:before { content: '\e805'; } /* '' */
+.icon-location:before { content: '\e806'; } /* '' */
+.icon-message:before { content: '\e807'; } /* '' */
+.icon-phone:before { content: '\e808'; } /* '' */
+.icon-play:before { content: '\e809'; } /* '' */
+.icon-search:before { content: '\e80a'; } /* '' */
+.icon-time:before { content: '\e80b'; } /* '' */
+.icon-twitter:before { content: '\e80c'; } /* '' */
+.icon-user:before { content: '\e80d'; } /* '' */
+.icon-vimeo-black:before { content: '\e80e'; } /* '' */
+.icon-year:before { content: '\e80f'; } /* '' */
+.icon-youtube:before { content: '\e810'; } /* '' */
+.icon-arrow-down:before { content: '\e811'; } /* '' */
+.icon-arrow-left:before { content: '\e812'; } /* '' */
+.icon-arrow-right:before { content: '\e813'; } /* '' */
+.icon-arrow-right-long:before { content: '\e814'; } /* '' */
+.icon-arrow-right-top:before { content: '\e815'; } /* '' */
+.icon-arrow-right-top-long:before { content: '\e816'; } /* '' */
+.icon-arrow-up:before { content: '\e817'; } /* '' */
+.icon-beche:before { content: '\e818'; } /* '' */
+.icon-being:before { content: '\e819'; } /* '' */

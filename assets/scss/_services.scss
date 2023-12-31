@@ -1,0 +1,114 @@
+.hide {
+    display: none;
+}
+
+.service {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+    
+    &__home-3 {
+        background: $white;
+        
+        .service__content {
+            max-width: 100%;
+        }
+    }
+    
+    &__about {
+        background-color: #F9F9F9;
+        background-image: url(assets/img/about/circle.svg);
+        background-repeat: no-repeat;
+        background-position: -20% -41%;
+    }
+
+    &__content {
+        max-width: 475px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mb-minus-30 {
+        margin-bottom: -30px;
+    }
+
+    &__item {
+        background: $white;
+        padding: 50px 45px;
+        height: calc(100% - 30px);
+        background-repeat: no-repeat;
+        background-position: 219% 188%;
+        box-shadow: 0px 20px 100px 0px rgba(0, 65, 61, 0.06);
+        background-image: url('assets/img/services/service__item-circle.png');
+
+        @media (max-width: 767px) {
+            padding: 30px 20px;
+        }
+        
+        &.border-none {
+            border-radius: 0!important;
+        }
+        
+        &-two {
+            box-shadow: none;
+            border-radius: 10px;
+            padding: 50px 30px 40px;
+            background: $white !important;
+            border: 1px solid rgba(37, 39, 52, 0.10) !important;
+            
+            &.service__item {
+                
+                .description {
+                    
+                     p {
+                         font-size:15px;
+                     }
+                }
+            }
+            
+            .service__item-readmore {
+                gap: 10px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            
+            &:hover, &:focus {
+                border-color: transparent !important;
+                box-shadow: 0px 20px 40px 0px rgba(20, 19, 19, 0.10);
+                
+                .service__item-readmore {
+                    color: $primary5 !important;
+                }
+            }
+        }
+
+        &:hover, &:focus {
+
+            .service__item-readmore i {
+                color: $primary1;
+                @include  transform(translate(15px, 0));
+                
+                svg {
+                    
+                    path[stroke="#00413D"] {
+                        stroke: $primary2;
+                    }
+                }
+            }
+        }
+
+        .description {
+
+            p {
+                font-size:16px;
+                line-height:24px;
+            }
+        }
+        
+        &-readmore {
+            
+            i {
+                display: inline-block;
+                transition: all .3s ease;
+            }
+        }
+    }
+}

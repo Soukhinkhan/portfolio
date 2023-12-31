@@ -1,0 +1,76 @@
+.cta-banner {
+    background: #F9F4F1;
+
+    @media (max-width: 365px) {
+    }
+
+    &__content {
+        gap: 30px;
+        padding: 36px 60px;
+        background-color: $primary1;
+
+        @media (max-width: 1199px) {
+            padding: 30px 40px 40px;
+        }
+
+        &-text {
+            max-width: 483px;
+
+            .title {
+                font-size: 40px;
+                line-height: 52px;
+                font-family: Vollkorn;
+
+                @media (max-width: 991px) {
+                    font-size: 30px;
+                    line-height: 42px;
+                    text-align: center;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 30px;
+                    line-height: 42px;
+                    text-align: center;
+                }
+            }
+
+            .description {
+
+                p {
+                    font-size:18px;
+                    line-height:24px;
+                    font-family: $jost;
+                }
+            }
+        }
+
+        &-form {
+
+            form {
+                gap: 10px;
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 575px) {
+                    flex-direction: column;
+                }
+
+                input {
+                    color:$white;
+                    width: 290px;
+                    max-width:100%;
+                    font-family: $jost;
+                    padding: 18px 20px;
+                    border: 1px solid $white;
+                    background-color: transparent;
+                    @include placeholder($white, 16px, 400);
+
+                    @media (max-width: 991px) {
+                        width: 250px;
+                        padding: 14px 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+.client {
+
+  .our-partners {
+      max-width: 1100px;
+  }
+}
+
+.contact  {
+
+  &.home-3 {
+    background-color: #FAFAFA;
+
+    .contact {
+
+      &__form {
+        border-radius: 30px;
+      }
+
+      &__text {
+        margin-left: inherit;
+      }
+    }
+  }
+}
+
+.what-i-offer {
+  background: #F9F4F1;
+
+  &__media {
+
+    .media {
+      width: 500px;
+      height: 600px;
+        max-width: 100%;
+      border-radius: 250px;
+      background: #D9D9D9;
+      background-position: center top !important;
+        
+        animation: border-radious-animation 3s ease-in-out infinite;
+        
+        @media (max-width: 991px){
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 575px){
+            width: 300px;
+            height:400px;
+        }
+        
+        @media (max-width: 400px){
+            height:350px;
+        }
+    }
+  }
+    
+    &__content {
+        margin-left: -9px;
+        
+        @media (max-width: 1199px){
+            margin-left:0;
+        }
+        
+        .title {
+            @media (max-width: 991px){
+                font-size:40px;
+                line-height:50px;
+            }
+            
+            @media (max-width: 575px){
+                font-size:30px;
+                line-height:40px;
+            }
+        }
+        
+        .description {
+            
+            p + p {
+                margin-top: 25px
+            }
+        }
+        
+        .btn-wrapper {
+            gap: 20px;
+        }
+    }
+    
+    &__item {
+        gap: 20px;
+        
+        @media (max-width: 575px){
+            flex-direction: column;
+        }
+        
+        &-wrapper {
+            gap: 30px;
+            
+            @media (max-width: 991px){
+                gap: 20px;
+            }
+        }
+        
+        &-icon {
+            
+            @media (max-width: 1199px){
+                max-width: 95px;
+            }
+            
+            @media (max-width: 991px){
+                max-width: 80px;
+            }
+        }
+        
+        &-text {
+            
+            @media (max-width: 991px){
+                text-align: center;
+            }
+            
+            .number {
+                @media (max-width: 991px){
+                    font-size:40px;
+                    line-height:50px;
+                }
+                
+                @media (max-width: 575px){
+                    font-size:30px;
+                    line-height:40px;
+                }
+            }
+        }
+    }
+}
+
+.portfolio_slider_home-3  {
+    
+    .slick-list {
+        margin-left: -15px;
+        margin-right: -15px;
+        
+        .slick-track {
+            height: 100%;
+            display: table !important;
+            
+            .slick-slide {
+                height: initial;
+                padding-left: 15px;
+                padding-right: 15px;
+                vertical-align: middle;
+                float: none !important;
+                display: table-cell !important;
+            }
+        }
+    }
+}
+
+.slider-controls {
+    
+    .testimonial-slider__home-3-arrows {
+        right: 0;
+        bottom: 97px;
+        position: absolute;
+        
+        @media (max-width: 991px){
+            bottom: 0;
+        }
+        
+        .theme-btn.btn-gradient {
+            display: inline-flex !important;
+            width: 56px !important;
+            height: 56px !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border: 1px solid $black;
+            transition: all 0.3s ease;
+            
+            @media (max-width: 767px){
+                width: 46px !important;
+                height: 46px !important;
+                padding: 0 !important;
+            }
+            
+            &:after {
+                content:inherit !important;
+            }
+            
+            i {
+                margin-left: 0 !important;
+            }
+            
+            &:hover {
+                border-color: $white;
+                background: transparent !important;
+            }
+        }
+    }
+}

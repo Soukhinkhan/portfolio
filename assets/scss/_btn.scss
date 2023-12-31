@@ -1,0 +1,221 @@
+/* ------------------------------------------------------------------
+   Template Default Button, Input Styles - Value Change with Your's Need
+ -------------------------------------------------------------------- */
+.theme-btn {
+    border: 0;
+    color: $white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: $ibm;
+    border-radius: 0;
+    padding: 15px 37px;
+    display: inline-block;
+    box-sizing: border-box;
+    @include transition(.4s);
+    background-color: $dark_black;
+
+    .fa-arrow-up-right {
+        width: 24px;
+        height: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(270deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+    }
+
+    // btn-transparent
+    &.btn-transparent {
+        color: $dark_black;
+        background: transparent;
+        text-decoration: underline;
+
+        i {
+            color:$white;
+            background:$black;
+        }
+    }
+
+    &.btn-border {
+
+        &.border-white {
+
+            &:before {
+                border-color:$white !important;
+            }
+        }
+
+        &:before {
+            top: 50%;
+            left: 50%;
+            content: "";
+            z-index: -1;
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            border: 1px solid $primary1;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    &.border-none {
+        border-radius: 0 !important;
+    }
+
+    // btn lg
+    &.btn-lg {
+        padding: 20px 44px;
+
+        @media (max-width: 991px) {
+            padding: 16px 37px;
+        }
+    }
+
+    // Button hover effect
+    &:after{
+        background: $primary1;
+    }
+
+    @media (max-width: 767px) {
+        padding: 12px 30px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 580px) {
+        padding: 10px 25px;
+    }
+
+    i {
+        font-size: 23px;
+        margin-left: 10px;
+        line-height: 10px;
+    }
+
+    &:hover, &:focus {
+        color: $white;
+        background-color: $primary1;
+    }
+
+    &.btn-white {
+        color: $primary1;
+        background-color: $white;
+
+        &:after {
+            background-color: $black !important;
+        }
+
+        &:hover, &:focus {
+            color: $white;
+        }
+    }
+
+    &.btn-red {
+        color: $white;
+        background-color: $primary1;
+
+        &:after {
+            background-color: $primary3 !important;
+        }
+
+        &:hover, &:focus {
+            color: $white;
+        }
+    }
+
+    &.btn-gradient {
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 500px;
+        padding: 10.5px 28.5px;
+        background: linear-gradient(270deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+
+        &:after {
+            background: linear-gradient(270deg,#FFB147 100.74%,#FF6C63 50.64%,#B86ADF 92.05%);
+        }
+    }
+    
+    &.btn-gradient-transparent {
+        color: #FF6C63;
+        background: linear-gradient(#F9F4F1, #F9F4F1) padding-box, linear-gradient(180deg, #FFB147, #FF6C63, #B86ADF) border-box;
+        border: 2px solid transparent;
+        transition: border .03s ease;
+        
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        
+        svg path {
+            transition: all 0.3s ease;
+        }
+        
+        &:after {
+            background: linear-gradient(180deg, #FFB147, #FF6C63, #B86ADF);
+        }
+        
+        &:hover, &:focus {
+            color: $white;
+            background: linear-gradient(#F9F4F1,#F9F4F1) padding-box,linear-gradient(180deg,#ffb14700,#ff6c6300,#b86adf00) border-box;
+            
+            svg {
+                path[stroke="#FF6C63"] {
+                    stroke: $white;
+                }
+            }
+        }
+    }
+    
+    &.btn-gradient-white {
+        color: #FF6C63;
+        background: linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg, #FFB147, #FF6C63, #B86ADF) border-box;
+        border: 2px solid transparent;
+        transition: border .03s ease;
+        
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        
+        svg path {
+            transition: all 0.3s ease;
+        }
+        
+        &:after {
+            background: linear-gradient(180deg, #FFB147, #FF6C63, #B86ADF);
+        }
+        
+        &:hover, &:focus {
+            color: $white;
+            background: linear-gradient(#F9F4F1,#F9F4F1) padding-box,linear-gradient(180deg,#ffb14700,#ff6c6300,#b86adf00) border-box;
+            
+            svg {
+                path[stroke="#FF6C63"] {
+                    stroke: $white;
+                }
+            }
+        }
+    }
+
+    // Button hover effect
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+
+    &:after{
+        top: 50%;
+        left: 50%;
+        content: "";
+        width: 100%;
+        height: 0%;
+        z-index: -1;
+        position: absolute;
+        transition: all 0.6s ease; 
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+
+    &:hover, &:focus { 
+   
+        &:after {
+            height: 380%;
+        }
+    }
+}
